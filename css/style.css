@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+}
+
+#logo {
+    font-family: 'DM Serif Display', serif;
+}
+
+#title {
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: #b70d23;
+    color: white;
+    margin-bottom: 0px;
+}
