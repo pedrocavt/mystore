@@ -40,13 +40,13 @@
                 </div>
 
                 <div class="">
-                    <button class="btn btn-lg" style="background-color:#46010a;color:white">
+                    <button class="btn btn-lg" style="background-color:#7c7f86;color:white">
                     <i class="fas fa-info-circle"></i>&nbsp;Detalhes
                     </button>
 
                         <?php if ($exibir['quantidade_produto'] > 0) { ?>
 
-                    <button class="btn btn-lg" style="background-color:#46010a;color:white;float:right">
+                    <button class="btn btn-lg" style="background-color:#0d4e2b;color:white;float:right">
                     <i class="fas fa-shopping-cart"></i>&nbsp;Comprar
                     </button>
                         <?php } else{ ?>
