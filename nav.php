@@ -41,9 +41,42 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-id-badge"></i>&nbsp;Contato</a>
             </li>
+
+                <?php
+
+                    if(empty($_SESSION['id'])){ //verifica se a sessão esta vazia
+                
+                ?>
+
+
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a>
+                <a class="nav-link" href="formLogon.php"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a>
             </li>
+                    <?php } else{ //se não estiver vazia, mostra o nome do usuario logado
+
+                        if($_SESSION['adm']==0){
+                        
+                    $consulta_user = $conexao->query("SELECT nome_user FROM clientes WHERE id_user = '$_SESSION[id]'");    
+                    $exibir_user = $consulta_user->fetch(PDO::FETCH_ASSOC);
+                    ?>
+            <li class="nav-item">
+                <a class="nav-link" href=""><i class="fas fa-user"></i>&nbsp;<?php echo $exibir_user['nome_user']; ?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
+            </li>
+                        <?php } else{ ?>
+                            
+                        <li class="nav-item">
+                            <a href="adm.php"><button class="btn btn-sm btn-danger">Administrador</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
+                        </li>
+                    
+                        <?php }
+                    }?>
+
         </ul>
     </div>
 </nav>
