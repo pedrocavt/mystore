@@ -7,22 +7,20 @@
     $email_user = $_POST['email_user'];
     $senha_user = $_POST['senha_user'];
 
-    // echo $email_user;
-    // echo $senha_user;
 
     $consulta = $conexao->query("SELECT id_user, email_user, senha_user, adm FROM clientes WHERE email_user='$email_user' AND senha_user='$senha_user'");
     
-    if($consulta->rowCount()==1){
+    if($consulta->rowCount()==1){ //verifica se o usurio existe
 
-        $show_user=$consulta->fetch(PDO::FETCH_ASSOC);
+        $show_user=$consulta->fetch(PDO::FETCH_ASSOC);  //pega os dados 
+ 
+        if($show_user['adm'] == 0){  //verifica se é administrador
 
-        if($show_user['adm'] == 0){
 
+        $_SESSION['id'] = $show_user['id_user']; //pega o id do banco e coloca na sessao
+        $_SESSION['adm']=0; //coloca o valor de adm na sessao
 
-        $_SESSION['id'] = $show_user['id_user'];
-        $_SESSION['adm']=0;
-
-        header("location: index.php");
+        header("location: index.php"); 
 
         }
 

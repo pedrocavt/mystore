@@ -54,7 +54,7 @@
                     </button>
                         <?php } else{ ?>
 
-                    <button class="btn btn-lg" style="background-color:#46010a;color:white;float:right">
+                    <button class="btn btn-lg" style="background-color:#46010a;color:white;float:right; cursor:default">
                     <i class="fas fa-exclamation-triangle"></i>&nbsp;Indispo...
                     </button>
                         <?php } ?>
