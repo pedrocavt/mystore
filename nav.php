@@ -1,5 +1,5 @@
 <nav class="navbar black navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" style="font-family:'Anton', sans-serif;" href="index.php">Luanna Colchões</a>
+    <a class="navbar-brand" style="font-family:'Anton', sans-serif;" href="index.php">Pedro Colchões</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

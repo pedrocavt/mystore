@@ -36,7 +36,7 @@
 	include 'nav.php';	
 	?>
 	 <center style="margin-top:20px;color:white">
-        <h1 class="display-4" id="title">Luanna Colchões</h1>
+        <h1 class="display-4" id="title">Pedro Colchões</h1>
     </center>
 	
 	<div class="container-fluid" >
