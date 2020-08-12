@@ -6,27 +6,13 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <style>
-    body{
-        background-color:#b70d23;
-    }
-    .formLogon {
-    margin:20px auto;
-    box-shadow: -2px 7px 22px -5px rgba(0,0,0,0.75);
-    padding: 10px;
-    border-radius: 10px;
-    background-color:white;
-}
-    #register{
-        float:right;
-    }
-    .anton{
-        font-family: 'Anton', sans-serif;
-    }
+    
+
 </style>
 </head>
-<body>
+<body class="backg">
     <?php 
         include 'conexao.php';
         include 'nav.php';
@@ -37,7 +23,7 @@
     </center>
 <div class="container-fluid">
 <div class=row>
-    <div class="col-sm-4 formLogon" >
+    <div class="col-sm-4 sombra" >
         <form method="POST" action="validates_logon.php" >
             <center>
             <h3 class="anton">Login</h3>

@@ -6,27 +6,10 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </head>
-<style>
-    body{
-        background-color:#b70d23;
-    }
-    .formUser{
-    margin: 25px auto;
-    box-shadow: -2px 7px 22px -5px rgba(0,0,0,0.75);
-    padding: 10px;
-	border-radius: 10px;
-	background: white;
-    }
-    .anton {
-    font-family: 'Anton', sans-serif;
-}
-
-
-</style>
-<body>
+<body class="backg">
 <?php 
     include 'conexao.php';
     include 'nav.php';
@@ -35,7 +18,7 @@
         <h1 class="display-4" id="title">Cadastro</h1>
     </center>
 
-    <div class="col-sm-4 formUser" >
+    <div class="col-sm-4 sombra" >
         <form method="POST" action="inserirUser.php" >
             
             <div class="form-group">

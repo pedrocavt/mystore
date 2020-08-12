@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Colchões</title>
     <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css">
 </head>
 <body>    
 <?php 
@@ -34,7 +34,9 @@
         ?>
 
             <div class="col-sm-3">
-                <img src="img/<?php echo $exibir['imagem_produto']; ?>" class="img-responsive" style="width:100%; height:60%;" >
+
+                <img src="img/<?php echo $exibir['imagem_produto1']; ?>" style="width:100%; height:60%;" >
+
                 <div>
                     <h4><?php echo mb_strimwidth($exibir['nome_produto'],0,22,'...'); ?></h4>
                 </div>

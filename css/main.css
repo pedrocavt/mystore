@@ -1,0 +1,67 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .backg {
+        background-color: #b70d23;
+    }
+    
+    .anton {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .navbar {
+        padding-bottom: 0px;
+        color: black;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(0 0 0);
+    }
+    
+    #title {
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 30px;
+    }
+    
+    .jumbotron {
+        background-color: #b70d23;
+        color: white;
+    }
+    
+    .formLogon {
+        margin: 0 auto;
+    }
+    
+    .jumb {
+        width: 100%;
+    }
+    
+    .sombra {
+        margin: 20px auto;
+        box-shadow: -2px 7px 22px -5px rgba(0, 0, 0, 0.75);
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    #register {
+        float: right;
+    }
+    
+    .anton {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    @media(max-width:575px) {
+        .jumb {
+            width: 40%;
+            margin: 0 30%;
+        }
+        .jumbo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
