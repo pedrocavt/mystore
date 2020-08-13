@@ -71,8 +71,8 @@
                     <h5><?php echo nl2br($exibir['descricao_produto'])?></h5>
                     
                     <h6><?php echo $exibir['marca_produto']?></h6>
-                    
-                    <h2 style="margin-top: 70px;">R$ <?php echo number_format($exibir['preco_produto'],2,',','.'); ?></h2>
+                     
+                    <h2 class="mTop">R$ <?php echo number_format($exibir['preco_produto'],2,',','.'); ?></h2>
 
                     <?php if ($exibir['quantidade_produto'] > 0) { ?>
 

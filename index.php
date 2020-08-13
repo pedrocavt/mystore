@@ -18,8 +18,7 @@
     include 'nav.php'; 
     include 'cabecalho.html';
 
-    $consulta = $conexao->query('SELECT * FROM produtos');
-
+    $consulta = $conexao->query('SELECT * FROM produtos LIMIT 4');
 
 ?>
 
