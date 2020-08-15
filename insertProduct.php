@@ -27,7 +27,7 @@
     </center>
 
     <div class="col-sm-4 sombra" >
-        <form method="POST" action="inserirUser.php" >
+        <form method="POST" action="_insertProduct.php" >
             
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Produto</label>
@@ -39,22 +39,6 @@
                     <option value="Ortobonn">Ortobonn</option>
                     <option value="ColchãoTop">ColchãoTop</option>
                     <option value="CamaDaoras">CamaDaoras</option>
-               </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1" class="anton">Departamento</label>
-                <select name="departamento_produto" class="form-control">
-                    <option value="Macio">Macio</option>
-                    <option value="Duro">Duro</option>
-                    <option value="Confortavel">Confortavel</option>
-               </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1" class="anton">Seção</label>
-                <select name="secao_produto" class="form-control">
-                    <option value="Macio">Cama</option>
-                    <option value="Colchão">Colchão</option>
-                    <option value="Edredon">Edredon</option>
                </select>
             </div>
             <div class="form-group">
@@ -71,15 +55,15 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Primeira Foto</label>
-                <input type="file" name="imagem_produto1" class="form-control" id="imagem_produto1" required autocomplete="off">
+                <input type="file" name="imagem_produto1" accept="image/*" class="form-control" id="imagem_produto1" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Segunda Foto</label>
-                <input type="file" name="imagem_produto2" class="form-control" id="imagem_produto2" required autocomplete="off">
+                <input type="file" name="imagem_produto2" class="form-control" accept="image/*" id="imagem_produto2" required autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Terceira Foto</label>
-                <input type="file" name="imagem_produto2" class="form-control" id="imagem_produto2" required autocomplete="off">
+                <input type="file" name="imagem_produto2" class="form-control" accept="image/*" id="imagem_produto2" required autocomplete="off">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
