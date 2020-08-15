@@ -17,7 +17,7 @@
         include "nav.php";
         include 'cabecalho.html';
 
-        $recebe_search = $_POST['search'];
+        $recebe_search = $_GET['search'];
 
         if($recebe_search == ""){
 
@@ -25,7 +25,12 @@
         }
 
         $consulta = $conexao->query("SELECT * FROM produtos WHERE nome_produto LIKE CONCAT ('%', '$recebe_search', '%')");
-    
+        
+        if($consulta -> rowCount() == 0){
+
+            header("location: erro2.php");
+
+        }
     ?>
 
 <div class="container-fluid">

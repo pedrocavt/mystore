@@ -14,9 +14,9 @@
           Camas/Colchões
         </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Camas</a>
+                    <a class="dropdown-item" href="search.php?search=Cama">Camas</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Colchões</a>
+                    <a class="dropdown-item" href="search.php?search=Colchão">Colchões</a>
 
                 </div>
             </li>
@@ -33,7 +33,7 @@
                 </div>
             </li>
         </ul>
-        <form method="POST" action="search.php" class="form-inline my-2 my-lg-0 mr-auto">
+        <form method="GET" action="search.php" class="form-inline my-2 my-lg-0 mr-auto">
             <input class="form-control mr-sm-2" name="search" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
         </form>
@@ -68,7 +68,7 @@
                         <?php } else{ ?>
                             
                         <li class="nav-item">
-                            <a href="adm.php"><button class="btn btn-sm btn-danger">Administrador</button></a>
+                            <a href="administrador.php"><button class="btn btn-sm btn-danger">Administrador</button></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
