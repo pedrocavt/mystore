@@ -27,7 +27,7 @@
     </center>
 
     <div class="col-sm-4 sombra" >
-        <form method="POST" action="_insertProduct.php" >
+        <form method="POST" action="_insertProduct.php" enctype="multipart/form-data">
             
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Produto</label>
@@ -63,7 +63,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Terceira Foto</label>
-                <input type="file" name="imagem_produto2" class="form-control" accept="image/*" id="imagem_produto2" required autocomplete="off">
+                <input type="file" name="imagem_produto3" class="form-control" accept="image/*" id="imagem_produto2" required autocomplete="off">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
