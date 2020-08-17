@@ -33,18 +33,23 @@
 
         <div class="col-sm-5 text-center" style="margin: 50px auto">
 
-            <a href="insertProduct.php">
+            <a href="insertProduct.php" style="text-decoration:none">
                 <button class="btn btn-lg btn-block" style="background-color:#3f00ff;color:white;margin-bottom: 10px">
                     <i class="fas fa-cloud-upload-alt"></i>&nbsp;Inserir Produto
                 </button>
             </a>
-            <button class="btn btn-lg btn-block" style="background-color:#ffa500c9;color:white">
+
+            <a href="listProduct.php" style="text-decoration:none">
+            <button class="btn btn-lg btn-block" style="background-color:#ffa500c9;color:white;margin-bottom: 10px">
                 <i class="fas fa-edit"></i>&nbsp;Alterar ou Excluir
             </button>
+            </a>
 
+            <a href="sales.php" style="text-decoration:none">
             <button class="btn btn-lg btn-block" style="background-color:#0d4e2b;color:white">
                 <i class="fas fa-shopping-cart"></i></i>&nbsp;Vendas
             </button>
+            </a>
 
         </div>
     
