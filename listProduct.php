@@ -43,13 +43,13 @@
         </div>
         
         <div class="col-sm-2 align-self-center" style="margin:0 auto">
-            <a href="update.php" style="text-decoration:none">
+            <a href="update.php?id=<?php echo $exibe['id'] ?>" style="text-decoration:none">
                 <button class="btn btn-lg btn-block" style="background-color:orange;color:white; margin-top:10px">
                 <i class="far fa-edit"></i>&nbsp;Alterar
                 </button>
             </a>
 
-            <a href="delete.php" style="text-decoration:none">
+            <a href="delete.php?id=<?php echo $exibe['id'] ?>" style="text-decoration:none">
             <button class="btn btn-lg btn-block" style="background-color:red;color:white; margin-top:10px">
             <i class="far fa-trash-alt"></i>&nbsp;Excluir
             </button>
