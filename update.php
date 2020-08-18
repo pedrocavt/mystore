@@ -32,7 +32,7 @@
     </center>
 
     <div class="col-sm-4 sombra" >
-        <form method="POST" action="_updateProduct.php" enctype="multipart/form-data">
+        <form method="POST" action="_updateProduct.php?id=<?php echo $id_produto; ?>" enctype="multipart/form-data">
             
             <div class="form-group">
                 <label for="exampleInputEmail1" class="anton">Produto</label>
