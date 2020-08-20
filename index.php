@@ -51,10 +51,12 @@
                     </a>
 
                         <?php if ($exibir['quantidade_produto'] > 0) { ?>
-
+                    
+                    <a href="carrinho.php?id=<?php echo $exibir['id'];?>" style="text-decoration:none">
                     <button class="btn btn-lg" style="background-color:#0d4e2b;color:white;float:right">
                     <i class="fas fa-shopping-cart"></i>&nbsp;Comprar
                     </button>
+                    </a>
                         <?php } else{ ?>
 
                     <button class="btn btn-lg" style="background-color:#46010a;color:white;float:right; cursor:default">
