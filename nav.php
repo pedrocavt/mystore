@@ -38,6 +38,7 @@
             <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
         </form>
         <ul class="navbar-nav">
+            
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-id-badge"></i>&nbsp;Contato</a>
             </li>
@@ -59,6 +60,9 @@
                     $consulta_user = $conexao->query("SELECT nome_user FROM clientes WHERE id_user = '$_SESSION[id]'");    
                     $exibir_user = $consulta_user->fetch(PDO::FETCH_ASSOC);
                     ?>
+            <li class="nav-item">
+                <a class="nav-link" href="carrinho.php"><i class="fas fa-shopping-cart"></i>&nbsp;Carrinho</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href=""><i class="fas fa-user"></i>&nbsp;<?php echo $exibir_user['nome_user']; ?></a>
             </li>

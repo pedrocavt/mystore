@@ -6,6 +6,10 @@
 
     <?php 
 
+        if(!isset($_SESSION['carrinho'])){
+            $_SESSION['carrinho'] = array();
+        }
+
         $total = null;  //cria uma variavel para mostrar o total da compra
         foreach($_SESSION['carrinho'] as $id => $quantidade){ //cria a sessao carrinho
         $consulta = $conexao->query("SELECT * FROM produtos WHERE id = '$id'"); //busca no banco o produto

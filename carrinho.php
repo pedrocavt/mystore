@@ -48,11 +48,18 @@
     </div>
 
     <div class="row text-center">
-        <a href="index.php" style="margin-left:auto">
+    <div class="col-sm-2" style="margin-left: auto">
+        <a href="index.php">
         <button class="btn btn-block btn-primary">Continuar Comprando</button></a>
-        <a href="finishbuy.php" style="margin-right:auto; margin-left:15px">
+    </div>
+        
+        <div class="col-sm-2" style="margin-right: auto">
+        <?php if(count($_SESSION['carrinho']) > 0) { ?>
+        <a href="finishbuy.php" >
         <button class="btn btn-block btn-success">Finalizar Comprar</button>
         </a>
+        <?php } ?>
+        </div>
     </div>
 
 
